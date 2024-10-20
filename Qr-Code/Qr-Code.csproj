@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Qr_Code</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QRCoder" Version="1.4.1" />
+    <PackageReference Include="ZXing.Net" Version="0.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\Downloads\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\Downloads\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
